@@ -8,6 +8,9 @@ def main() -> None:
     app = Dash(external_stylesheets=[BOOTSTRAP])
     app.title = "Medal dashboard"
     app.layout = create_layout(app)
+
+    server=app.server
+
     app.run()
 
 
