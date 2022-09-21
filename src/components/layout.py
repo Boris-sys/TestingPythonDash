@@ -10,6 +10,8 @@ from src.components import (
 
 
 def create_layout(app: Dash, data: pd.DataFrame) -> html.Div:
+    #This function contains the structure of the page
+    #each one of the custom components contains a render function returning the desire viusual
     return html.Div(
         className="app-div",
         children=[
@@ -18,6 +20,7 @@ def create_layout(app: Dash, data: pd.DataFrame) -> html.Div:
             html.Div(
                 className="dropdown-container",
                 children=[
+                    #This div contains all the dropdowns
                     year_dropdown.render(app, data),
                     month_dropdown.render(app, data),
                     category_dropdown.render(app, data),

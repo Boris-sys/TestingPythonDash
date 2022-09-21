@@ -13,6 +13,7 @@ def render(app: Dash, data: pd.DataFrame) -> html.Div:
     @app.callback(
         Output(ids.CATEGORY_DROPDOWN, "value"),
         [
+            #this inputs define which components influence the data displayed
             Input(ids.YEAR_DROPDOWN, "value"),
             Input(ids.MONTH_DROPDOWN, "value"),
             Input(ids.SELECT_ALL_CATEGORIES_BUTTON, "n_clicks"),

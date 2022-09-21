@@ -6,11 +6,11 @@ from src.data.loader import load_transaction_data
 
 DATA_PATH = "./data/transactions.csv"
 
-data = load_transaction_data(DATA_PATH)
-app = Dash(external_stylesheets=[BOOTSTRAP])
+data = load_transaction_data(DATA_PATH) 
+app = Dash(external_stylesheets=[BOOTSTRAP]) #define the dash app with a bootstrap template
 app.title = "Boris Dashboard"
 app.layout = create_layout(app, data)
-server = app.server
+server = app.server #this definition is important for the Heroku deployment
 
 def main() -> None:    
     # app = Dash(external_stylesheets=[BOOTSTRAP])
