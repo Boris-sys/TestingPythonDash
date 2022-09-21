@@ -21,8 +21,4 @@ Dash is running on http://127.0.0.1:8050/
  * Debug mode: on
 ```
 
-Live demo
-
-```shell
-https://boris-python-dash.herokuapp.com/
-```
+[DEMO](https://boris-python-dash.herokuapp.com)
